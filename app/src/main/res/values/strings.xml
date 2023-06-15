@@ -1,0 +1,64 @@
+<resources>
+    <string name="login">Login Page</string>
+    <string name="username">UserName</string>
+    <string name="psw">Password</string>
+    <string name="enter">Login</string>
+    <string name="register">Don\'t have an account? Register here</string>
+    <string name="check_remember">remember</string>
+    <string name="find_psw">Find password</string>
+    <string name="login2">Login</string>
+    <string name="projectname">MSHZ</string>
+    <string name="signintocontinue">sign in to continue</string>
+    <string name="forgetpsw">Forget password?</string>
+    <string name="personal_account">personal account</string>
+    <string name="settings">settings</string>
+    <string name="home">home</string>
+    <string name="header">header</string>
+    <string name="search">search</string>
+    <string name="edit">edit</string>
+    <string name="favorite">favourite</string>
+    <string name="more">more</string>
+    <string name="page_title">page title</string>
+    <string name="title_activity_drawerlayout">drawerlayout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="searchbar_hint">search</string>
+    <string name="register1">Register</string>
+    <string name="signuptocontinue">sign up to continue</string>
+    <string name="psw_putinto_again">Input password again</string>
+    <string name="community">Community</string>
+    <string name="main_page">Main page</string>
+    <string name="search1">Search</string>
+    <string name="search2">search</string>
+    <string name="menu_search">search sth</string>
+    <string name="menu_setting">set the menu</string>
+    <string name="textview">textview</string>
+    <string name="yuecai">粤菜</string>
+    <string name="explore">Explore</string>
+    <string name="bdcx">八大菜系</string>
+    <string name="app_label">1</string>
+    <string name="search_hint">Search for something...</string>
+    <string name="rmmsjd">热门美食景点</string>
+    <string name="rmms">热门美食</string>
+    <string name="zshydmsjd">最受欢迎的美食景点</string>
+    <string name="dongporou">东坡肉</string>
+    <string name="baiqieji">白切鸡</string>
+    <string name="shuizhuyu">水煮鱼</string>
+    <string name="jiyijian">鸡翼尖</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="home_fragment">Home Fragment</string>
+    <string name="community_fragment">Community Fragment</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="link_to_content_button"> Link to Content Button</string>>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main">Main</string>
+</resources>

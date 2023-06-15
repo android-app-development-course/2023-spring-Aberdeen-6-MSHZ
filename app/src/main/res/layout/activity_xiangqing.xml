@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xiangqingActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/background_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:srcCompat="@drawable/bqjbg" />
+
+                <ImageView
+                    android:id="@+id/heartImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:clickable="true"
+                    android:contentDescription="收藏"
+                    app:srcCompat="@drawable/heartfirst" />
+
+                <Button
+                    android:id="@+id/r_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="←"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle='bold' />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/header_text"
+                    style="@style/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="白切鸡"
+                    android:textColor="@color/black"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.022" />
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="/粤菜"
+                    android:textColor="@color/grey"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/lable1"
+                    style="@style/header"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:text="姜葱"
+                    android:textColor="@color/grey"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.022" />
+
+                <TextView
+                    android:id="@+id/lable2"
+                    style="@style/header"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:text="鲜美"
+                    android:textColor="@color/grey"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.022" />
+
+                <TextView
+                    android:id="@+id/lable3"
+                    style="@style/header"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border"
+                    android:text="清淡"
+                    android:textColor="@color/grey"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.022" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/bqj" />
+
+            <TextView
+                android:id="@+id/header_text1"
+                style="@style/header"
+                android:layout_marginTop="10dp"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border2"
+                android:text="美食简介"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/content_text1"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                android:text="      白斩鸡又叫白切鸡，是一道中华民族特色菜肴，是一道经典的客家菜、粤菜，在南方菜系中普遍存在。始于清代的民间酒店，因烹鸡时不加调味白煮而成，食用时随吃随斩，故称“白斩鸡”。白斩鸡形状美观，皮黄肉白，肥嫩鲜美，滋味异常鲜美，十分可口，肉色洁白皮带黄油，具有葱油香味，葱段打花镶边，食时佐以姜蓉、蒜泥、酱油，保持了鸡肉的鲜美、原汁原味，食之别有风味。"
+                android:gravity="start|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text2"
+                style="@style/header"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border2"
+                android:text="历史由来"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/content_text2"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                android:text="      白斩鸡是冷盘，始于清代的民间酒楼，因烹鸡时不加调味白煮而成，食用时随吃随斩，故称“白斩鸡”又叫“白切鸡”。
+又因其用料为广东省清远市阳山县出品的三黄鸡（脚黄、皮黄、嘴黄），故又称三黄油鸡。后来广东各饭店和熟食店都经营“白斩鸡”，不仅用料精细，而且还用熬熟的“虾子酱油”同鸡一起上桌蘸食。
+此菜色泽金黄，皮滑肉嫩，滋味异常鲜美，久吃不厌。
+清人袁枚《随园食单》称之为白片鸡。他说：“鸡功最巨，诸菜赖之， 故令羽族之首，而以他禽附之，作羽族单。”单上列鸡菜数十款，用于蒸、炮、煨、卤、糟的都有，列以首位就是白片鸡，说它有“太羹元酒之味”。
+如今，粤菜厨坛中，鸡的菜式有200余款之多，而最为人常食不厌的却属白斩鸡，原汁原味，皮爽肉滑，大筵小席皆宜，逢年过节必备，深受食家及普通百姓喜欢。"
+                android:gravity="start|end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text3"
+                style="@style/header"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border2"
+                android:text="烹饪菜单"
+                android:textSize="20dp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text4"
+                style="@style/header"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="·用料"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="263dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/menu" />
+            <TextView
+                android:id="@+id/h_text"
+                style="@style/header"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="·做法"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+            <TextView
+                android:id="@+id/step1"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤一"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz1" />
+
+            <TextView
+                android:id="@+id/content_text3.1"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="清远鸡或者三黄鸡一只，一块姜一半切片、一半去皮备用，香葱两根，蒜一瓣，八角两个，花椒十几粒。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text5"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤二"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz2" />
+
+            <TextView
+                android:id="@+id/content_text3.2"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="冷水下葱姜片八角花椒粒，煮开锅后，下入清远鸡，中小火微微沸腾煮两分钟。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text6"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤三"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz3" />
+
+            <TextView
+                android:id="@+id/content_text3.3"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="翻个身，另一面再煮两分钟。然后加盖，小火煮十分钟。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text7"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤四"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz4" />
+
+            <TextView
+                android:id="@+id/content_text3.4"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="可选择做两个口味的，一个是标配版葱姜花椒油蘸汁，一个是姜蒜生抽汁。香葱切葱末，姜蒜擦茸。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text8"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤五"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz5" />
+
+            <TextView
+                android:id="@+id/content_text3.5"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="锅里适量油，一小把花椒冷油下锅，最小火炒至花椒深棕色（大约六七分钟），这时候会问到食指大动的花椒油香气。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text9"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤六"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz6" />
+
+            <TextView
+                android:id="@+id/content_text3.6"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="过滤掉花椒，滚油炝香两碗蘸料，葱姜里加两勺盐适量煮鸡的鸡汤，姜蒜里加几勺生抽。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text10"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤七"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz7" />
+
+            <TextView
+                android:id="@+id/content_text3.7"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="把清远鸡捞出马上用凉水浸泡，冰水更好，急剧的冷热变化，会让鸡皮骤然收紧，口感更加柔脆。"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <TextView
+                android:id="@+id/header_text11"
+                style="@style/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border3"
+                android:text="步骤八"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bqjbz8" />
+
+            <TextView
+                android:id="@+id/content_text3.8"
+                style="@style/content"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="最后控净水，捞出斩块，大功告成！"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/recommand"
+                    style="@style/header"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border2"
+                    android:text="更多推荐"
+                    android:textSize="20dp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.022" />
+
+                <TextView
+                    android:id="@+id/kick"
+                    style="@style/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="/点击图片了解"
+                    android:textColor="@color/grey"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/bzf"
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    android:src="@drawable/bzf1" />
+
+                <ImageView
+                    android:id="@+id/cf"
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/cf1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/jzn"
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    android:src="@drawable/jzn1" />
+
+                <ImageView
+                    android:id="@+id/tzz"
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/tzz1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

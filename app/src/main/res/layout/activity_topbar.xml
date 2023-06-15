@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_topbar"
+    android:id="@+id/drawlayout"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/bjmain"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/search_card"
+                    android:layout_width="300dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="55dp"
+                    app:cardCornerRadius="15dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:queryHint="搜点啥..."
+                        android:iconifiedByDefault="false"
+                        android:elevation="4dp"
+                        android:padding="8dp"
+                        android:imeOptions="actionSearch"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/search_border"/>
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="1dp"
+                        android:background="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <Button
+                        android:id="@+id/searchbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@drawable/search_button"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/search"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rmms"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/scrolllayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round1"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="110dp"
+                                android:src="@drawable/dongporou"
+                                android:padding="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/dongporou"
+                                android:layout_marginTop="50dp"/>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round2"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp"
+                            android:onClick="JumpTobqj">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="110dp"
+                                android:src="@drawable/baiqieji"
+                                android:padding="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/baiqieji"
+                                android:layout_marginTop="50dp"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round3"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="110dp"
+                                android:src="@drawable/shuizhuyu"
+                                android:padding="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/shuizhuyu"
+                                android:layout_marginTop="50dp"/>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round4"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="110dp"
+                                android:src="@drawable/dongporou"
+                                android:padding="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/dongporou"
+                                android:layout_marginTop="50dp"/>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zshydmsjd"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/scrolllayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round11"
+                            android:layout_width="215dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/guangzhou"
+
+                                />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round12"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/sichuan"
+                                />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/round13"
+                            android:layout_width="215dp"
+                            android:layout_height="130dp"
+                            app:cardCornerRadius="15dp"
+                            app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                            app:cardBackgroundColor="?attr/colorSurface"
+                            android:layout_marginBottom="5dp"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/beijing"
+                                />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bdcx"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card2left"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="JumpToList">
+
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="150dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/yuecai"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/yuecai"
+                        android:layout_marginTop="70dp"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card2right"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/jiyijian"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="湘菜"
+                        android:layout_marginTop="70dp"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card3left"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="鲁菜"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/lucai"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card3right"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="江苏菜"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/sucai"
+                    />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card4left"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="闽菜"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/mincai"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card4right"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="浙江菜"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/dongporou"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card5left"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="川菜"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/chuancai"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card5right"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="2dp"
+                    app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="徽菜"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/huicai"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            app:backgroundTint="?attr/colorSurface"
+            app:elevation="10dp"
+            app:compatShadowEnabled="false"
+            style="?attr/bottomNavigationStyle"
+            android:layout_gravity="bottom"
+            android:onClick="JumpToHome"
+            />
+    </LinearLayout>
+
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:id="@+id/topbarapplayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:fitsSystemWindows="true">-->
+
+<!--        <com.google.android.material.navigation.NavigationView-->
+<!--            android:id="@+id/navigationview"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:menu="@menu/navigation_drawer" />-->
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
